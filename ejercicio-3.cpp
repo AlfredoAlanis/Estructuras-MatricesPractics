@@ -17,10 +17,10 @@ for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < 4; j++)
     {
-        int num = rand() % 10;  // Número aleatorio entre 0 y 9
+        matriz[i][j] = rand() % 10;  // Número aleatorio entre 0 y 9
 
         //contar pares e impares
-        if(matriz[i][j] %2 ==0) {
+        if(matriz[i][j] % 2 ==0){
             pares++;//si es par aumenta el contador
         } else{
             impares++;//si es impar aumenta
@@ -35,11 +35,16 @@ for(int i = 0; i < 4; i++){
     for (int j = 0; j < 4; j++)
     
     {
-        //aqui mando a que imprima los valores
+        //aqui se manda a imprimir
         printf( "%d ", matriz[i][j]);
     }
     printf("\n");
 }
+
+//aqui manda a imprimir el numero de pares e impares
+printf("\nCantidad de numeros pares: %d\n", pares);
+printf("\nCantidad de numeros impares: %d\n", impares);
+
 return 0;
 
 }
