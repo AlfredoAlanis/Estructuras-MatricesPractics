@@ -22,7 +22,7 @@ int C[2][2];
 
 
 //llenar matriz con numeros aleatorios
-printf("\nLlenando matriz A (%dx%d)...\n", m, n);
+printf("\nLlenando matriz A (%dx%d)...", m, n);
 for(int i = 0; i < m; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < n; j++)
@@ -32,7 +32,7 @@ for(int i = 0; i < m; i++){
 } 
 
 //llenar matriz con numeros aleatorios
-printf("\nLlenando matriz B (%dx%d)...\n", n, p);
+printf("\nLlenando matriz B (%dx%d)...", n, p);
 for(int i = 0; i < n; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < p; j++)
@@ -50,7 +50,7 @@ for(int i = 0; i < n; i++){
     }
 
 //llenar matriz C con multiplicacion de numeros aleatorios
-printf("Multiplicando matrices...\n");
+printf("\nMultiplicando matrices...\n");
 for(int i = 0; i < m; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < p; j++)
