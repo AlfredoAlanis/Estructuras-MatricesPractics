@@ -6,41 +6,52 @@ using namespace std;
 int main(){
     // Inicializar semilla para números aleatorios
     srand(time(NULL));
-//variable para decidir el numero de datos que tendra la matriz en este caso 4x4, ademas de que sean ceros
-int matriz[4][4];
-//variables para suma y promedio
-int Suma = 0;
-float Promedio;
+//variables para las matrices
+    int A[3][4];
+    int AT[4][3];
 
-//ciclo para recorrer las filas de la matriz
-for(int i = 0; i < 4; i++){
+//ciclo para recorrer las filas de la matriz A
+for(int i = 0; i < 3; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < 4; j++)
     {
-        matriz[i][j] = rand() % 90 + 10;  // Número aleatorio entre 10 y 90
-        Suma = Suma + matriz[i][j]; //sumar cada elemento
+        A[i][j] = rand() % 10;  // Número aleatorio entre 1 y 9
+       
     }
 } 
 
-//calcular promedio
-Promedio = Suma/16.0;
-//imprimir la matriz
-printf("la matriz resultante es: \n");
-//ciclo para que imprima el resultado
-for(int i = 0; i < 4; i++){
-    //esta otra parte para las columnas
+//calcular la transpuesta
+for (int i = 0; i < 3; i++)
+{
     for (int j = 0; j < 4; j++)
-    
     {
-        //aqui se manda a imprimir
-        printf( "%d ", matriz[i][j]);
+        AT[j][i] = A[i][j]; // cambiar filas por columnas
+    }
+    
+}
+
+
+//imprimir la matriz original
+printf("Matriz original A (3X4): \n");
+for (int i = 0; i < 3; i++)
+{
+    for (int i = 0; i < 4; i++)
+    {
+        printf("%d ", A[i][j]);
     }
     printf("\n");
 }
 
-//aqui manda a imprimir la suma y promedio
-printf("\nSuma de todos los elementos: %d\n", Suma);
-printf("\nPromedio de los elementos: %.2f\n", Promedio);
+//imprimir la matriz traspuesta
+printf("Matriz original A (4x3): \n");
+for (int i = 0; i < 4; i++)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        printf("%d ", A[i][j]);
+    }
+    printf("\n");
+}
 
 return 0;
 
