@@ -1,17 +1,19 @@
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
 using namespace std;
 
 int main(){
 //inicializar semilla para numeros aleatorios
 srand(time(NULL));
 //definir tamano 
-int n = 2;
 int m = 2;
+int n = 3;
 int p = 2;
 
 printf("====MULTIPLICACION DE MATRICES =====\n");
 printf("Dimensiones fijas: \n");
-printf("A (%d) x B (%d) = C (%d)\n", m, n,n,p,m,p);
+printf("A(%dx%d) × B(%dx%d) = C(%dx%d)\n", m, n, n, p, m, p);
 
 //crear 3 matrices
 int A[2][3];
@@ -20,7 +22,7 @@ int C[2][2];
 
 
 //llenar matriz con numeros aleatorios
-printf("Llenando matriz A...\n");
+printf("\nLlenando matriz A (%dx%d)...\n", m, n);
 for(int i = 0; i < m; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < n; j++)
@@ -30,7 +32,7 @@ for(int i = 0; i < m; i++){
 } 
 
 //llenar matriz con numeros aleatorios
-printf("Llenando matriz B...\n");
+printf("\nLlenando matriz B (%dx%d)...\n", n, p);
 for(int i = 0; i < n; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < p; j++)
@@ -39,21 +41,32 @@ for(int i = 0; i < n; i++){
     }
 }
 
-//llenar matriz C con SUMA de numeros aleatorios
-printf("\n=== MATRIZ A (%dx%d) ===\n", m, n);
+// INICIALIZAR matriz C con ceros
+    for(int i = 0; i < m; i++){
+        for (int j = 0; j < p; j++)
+        {
+            C[i][j] = 0;
+        }
+    }
+
+//llenar matriz C con multiplicacion de numeros aleatorios
+printf("Multiplicando matrices...\n");
 for(int i = 0; i < m; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < p; j++)
     {
-        C[i][j] += A[i][j] * B[i][j]; //multiplicacion
-    }
+        for (int k = 0; k < n; k++)
+{
+    C[i][j] += A[i][k] * B[k][j];
 }
+    }}
+
 
 //Imprimir matriz A 
-printf("\n=== MATRIZ A ===\n");
-for(int i = 0; i < 4; i++){
+ printf("\n=== MATRIZ A (%dx%d) ===\n", m, n);
+for(int i = 0; i < m; i++){
     //esta otra parte para las columnas
-    for (int j = 0; j < 4; j++)
+    for (int j = 0; j < n; j++)
     {
         printf("%2d ", A[i][j]);
     }
@@ -61,21 +74,20 @@ for(int i = 0; i < 4; i++){
 }
 
 //Imprimir matriz B 
-printf("\n=== MATRIZ B ===\n");
-
-for(int i = 0; i < 4; i++){
+ printf("\n=== MATRIZ B (%dx%d) ===\n", n, p);
+for(int i = 0; i < n; i++){
     //esta otra parte para las columnas
-    for (int j = 0; j < 4; j++)
+    for (int j = 0; j < p; j++)
     {
         printf("%2d ", B[i][j]);
     }
     printf("\n");
 }
-//Imprimir matriz C(Suma de A y B) 
-printf("\n=== MATRIZ C (A + B)===\n");
-for(int i = 0; i < 4; i++){
+//Imprimir matriz C(Multiplicacion de A y B) 
+ printf("\n=== MATRIZ C (A x B) (%dx%d) ===\n", m, p);
+for(int i = 0; i < m; i++){
     //esta otra parte para las columnas
-    for (int j = 0; j < 4; j++)
+    for (int j = 0; j < p; j++)
     {
         printf("%3d ", C[i][j]);
     }
