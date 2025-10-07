@@ -40,7 +40,7 @@ for(int i = 0; i <4; i++){
         }
         
             //buscar minimo
-        if (matriz[i][j] > maximo){
+        if (matriz[i][j] < minimo){
             minimo = matriz[i][j];
             fila_Min = i;
             columna_Min = j;
