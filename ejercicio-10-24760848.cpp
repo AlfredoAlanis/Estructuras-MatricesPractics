@@ -35,7 +35,7 @@ for (int i = 0; i < 3; i++)
 printf("Matriz original A (3X4): \n");
 for (int i = 0; i < 3; i++)
 {
-    for (int i = 0; i < 4; i++)
+    for (int j = 0; j < 4; j++)
     {
         printf("%d ", A[i][j]);
     }
@@ -46,9 +46,9 @@ for (int i = 0; i < 3; i++)
 printf("Matriz original A (4x3): \n");
 for (int i = 0; i < 4; i++)
 {
-    for (int i = 0; i < 3; i++)
+    for (int j = 0; j < 3; j++)
     {
-        printf("%d ", A[i][j]);
+        printf("%d ", AT[i][j]);
     }
     printf("\n");
 }
