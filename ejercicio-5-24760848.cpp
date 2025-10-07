@@ -29,9 +29,26 @@ fila_Min = 0;
 columna_Min = 0;
 
 //busca maximo y minimo en la matriz
-
+for(int i = 0; i <4; i++){
+    for (int j = 0; j < 4; j++)
+    {
+        //buscar maximo
+        if (matriz[i][j] > maximo){
+            maximo = matriz[i][j];
+            fila_Max = i;
+            columna_Max = j;
+        }
+        
+            //buscar minimo
+        if (matriz[i][j] > maximo){
+            minimo = matriz[i][j];
+            fila_Min = i;
+            columna_Min = j;
+        }
+        }
+    }
 //imprimir la matriz
-printf("la matriz resultante es: \n");
+printf("Matriz con numeros aleatorios: \n");
 //ciclo para que imprima el resultado
 for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
@@ -44,9 +61,9 @@ for(int i = 0; i < 4; i++){
     printf("\n");
 }
 
-//aqui manda a imprimir el numero de pares e impares
-printf("\nSuma de todos los elementos: %d\n", Suma);
-printf("\nPromedio de los elementos: %.2f\n", Promedio);
+//aqui manda a imprimir el numero maximo y minimo
+printf("\nMaximo: %d en posicion [%d][%d]\n", maximo, fila_Max, columna_Max);
+printf("\nMinimo: %d en posicion [%d][%d]\n", minimo, fila_Min, columna_Min);
 
 return 0;
 
