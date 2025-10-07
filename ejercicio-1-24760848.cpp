@@ -1,4 +1,4 @@
-//aclaro que este codigo lo hice antes en otro repositorio por que no habia echo el fork al respositorio que puso si gusta revisar: https://github.com/AlfredoAlanis/EstructuraDeDatos.git
+//aclaro que este codigo lo hice antes en otro repositorio por que no habia echo el fork al respositorio que puso
 #include <iostream>
 using namespace std;
 
