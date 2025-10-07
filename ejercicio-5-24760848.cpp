@@ -8,22 +8,28 @@ int main(){
     srand(time(NULL));
 //variable para decidir el numero de datos que tendra la matriz en este caso 4x4, ademas de que sean ceros
 int matriz[4][4];
-//variables para contar pares e impares
-int Suma = 0;
-float Promedio;
+//variables para maximo y minimo
+int maximo, minimo;
+int fila_Max, columna_Max, fila_Min, columna_Min;
 
 //ciclo para recorrer las filas de la matriz
 for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < 4; j++)
     {
-        matriz[i][j] = rand() % 90 + 10;  // Número aleatorio entre 10 y 90
-        Suma = Suma + matriz[i][j]; //sumar cada elemento
+        matriz[i][j] = rand() % 100;  // Número aleatorio entre 0 y 99
     }
 } 
+//inicializar maximos y minimos
+maximo = matriz[0][0];
+minimo = matriz[0][0];
+fila_Max = 0;
+columna_Max = 0;
+fila_Min = 0;
+columna_Min = 0;
 
-//calcular promedio
-Promedio = Suma/16.0;
+//busca maximo y minimo en la matriz
+
 //imprimir la matriz
 printf("la matriz resultante es: \n");
 //ciclo para que imprima el resultado
