@@ -54,7 +54,7 @@ for (int j = 0; j < 4; j++)
 {
     printf("%d ", sumaColumna[j]);
 }
-
+printf("\n");
 return 0;
 
 }
