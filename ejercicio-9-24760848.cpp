@@ -4,6 +4,7 @@ using namespace std;
 int main(){
 //inicializar semilla para numeros aleatorios
 srand(time(NULL));
+//definir tama
 
 //crear 3 matrices
 int A[4][4];
