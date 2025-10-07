@@ -4,8 +4,10 @@ using namespace std;
 int main(){
 //inicializar semilla para numeros aleatorios
 srand(time(NULL));
-//definir tama
-
+//definir tamano 
+int n = 2;
+int m = 2;
+int p = 2;
 //crear 3 matrices
 int A[4][4];
 int B[4][4];
@@ -18,7 +20,7 @@ for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < 4; j++)
     {
-        A[i][j] = rand() % 100; //numeros aleatorios de 0 a 99
+        A[i][j] = rand() % 9 + 1; //numeros aleatorios de 0 a 9
     }
 } 
 
@@ -28,17 +30,18 @@ for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < 4; j++)
     {
-        B[i][j] = rand() % 100; //numeros aleatorios de 0 a 99
+        B[i][j] = rand() % 9 + 1; //numeros aleatorios de 0 a 9
     }
 }
 
 //llenar matriz C con SUMA de numeros aleatorios
 
-for(int i = 0; i < 4; i++){
+for(int i = 0; i < m; i++){
     //esta otra parte para las columnas
-    for (int j = 0; j < 4; j++)
+    for (int j = 0; j < p; j++)
+    for (int k = 0; k < n; k++)
     {
-        C[i][j] = A[i][j] + B[i][j]; //numeros aleatorios de 0 a 99
+        C[i][j] += A[i][j] * B[i][j]; //multiplicacion
     }
 }
 
