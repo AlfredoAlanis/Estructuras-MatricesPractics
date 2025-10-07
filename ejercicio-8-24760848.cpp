@@ -37,7 +37,7 @@ for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < 4; j++)
     {
-        C[i][j] = A[i][j] + B[i][j]; //numeros aleatorios de 0 a 99
+        C[i][j] = A[i][j] - B[i][j]; //numeros aleatorios de 0 a 99
     }
 }
 
@@ -63,7 +63,7 @@ for(int i = 0; i < 4; i++){
     }
     printf("\n");
 }
-//Imprimir matriz C(Suma de A y B) 
+//Imprimir matriz C(Resta de A y B) 
 printf("\n=== MATRIZ C (A + B)===\n");
 for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
