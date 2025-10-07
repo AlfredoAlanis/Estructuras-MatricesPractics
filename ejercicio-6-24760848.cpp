@@ -31,23 +31,28 @@ for(int i = 0; i <4; i++){
         sumaColumna[j] += matriz[i][j];
         }
     }
-//imprimir la matriz
-printf("Matriz con numeros aleatorios: \n");
-//ciclo para que imprima el resultado
+//imprimir la matriz con suma de filas y columnas
+printf("Matriz : \n");
+
 for(int i = 0; i < 4; i++){
-    //esta otra parte para las columnas
+    
     for (int j = 0; j < 4; j++)
     
     {
-        //aqui se manda a imprimir
-        printf( "%d ", matriz[i][j]);
+        //imprimir la suma de filas
+        printf( "%2d ", matriz[i][j]);
     }
-    printf("\n");
+    printf("\n Suma fila %d: %d\n", i, sumaFila[i]);
 }
+//separacion 
+printf("---\n");
 
-//aqui manda a imprimir el numero maximo y minimo
-printf("\nMaximo: %d en posicion [%d][%d]\n", maximo, fila_Max, columna_Max);
-printf("\nMinimo: %d en posicion [%d][%d]\n", minimo, fila_Min, columna_Min);
+//imprimir suma de columnas
+printf("Suma columnas: ");
+for (int j = 0; j < 4; j++)
+{
+    printf("%d ", sumaColumna[j]);
+}
 
 return 0;
 
