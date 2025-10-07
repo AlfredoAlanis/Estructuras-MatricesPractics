@@ -43,7 +43,7 @@ for (int i = 0; i < 3; i++)
 }
 
 //imprimir la matriz traspuesta
-printf("Matriz original A (4x3): \n");
+printf("Matriz Traspuesta AT (4x3): \n");
 for (int i = 0; i < 4; i++)
 {
     for (int j = 0; j < 3; j++)
