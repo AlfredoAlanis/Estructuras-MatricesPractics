@@ -32,5 +32,22 @@ for (int i = 0; i < 4; i++)
     }
     printf("\n");
 }
+//solicitar numero a usuario
+printf("\nIngrese el numero a buscar");
+scanf("%d", &numeroBuscar);
+
+//ciclo para buscar en la matriz
+for (int i = 0; i < 4; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        if(matriz[i][j] == numeroBuscar){
+            contador++; //esto aumenta el contador
+            printf(" - Encontrado en posicion [%d][%d]\n", i, j);
+        }
+    }
+    
+}
+
 
 }
