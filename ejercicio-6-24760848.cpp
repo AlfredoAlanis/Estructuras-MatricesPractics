@@ -39,10 +39,11 @@ for(int i = 0; i < 4; i++){
     for (int j = 0; j < 4; j++)
     
     {
-        //imprimir la suma de filas
+        //imprimir la matriz
         printf( "%2d ", matriz[i][j]);
     }
-    printf("\n Suma fila %d: %d\n", i, sumaFila[i]);
+    //imprimir la suma de fila
+    printf("| Suma fila %d: %d\n", i, sumaFila[i]);
 }
 //separacion 
 printf("---\n");
