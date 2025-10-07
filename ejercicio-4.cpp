@@ -23,7 +23,7 @@ for(int i = 0; i < 4; i++){
 } 
 
 //calcular promedio
-Promedio = Suma / 16.0;
+Promedio = Suma/16.0;
 //imprimir la matriz
 printf("la matriz resultante es: \n");
 //ciclo para que imprima el resultado
@@ -40,7 +40,7 @@ for(int i = 0; i < 4; i++){
 
 //aqui manda a imprimir el numero de pares e impares
 printf("\nSuma de todos los elementos: %d\n", Suma);
-printf("\nPromedio de los elementos: %d\n", Promedio);
+printf("\nPromedio de los elementos: %.2f\n", Promedio);
 
 return 0;
 
