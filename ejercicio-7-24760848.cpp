@@ -31,7 +31,7 @@ for(int i = 0; i < 4; i++){
     }
 }
 
-//llenar matriz con numeros aleatorios
+//llenar matriz C con SUMA de numeros aleatorios
 
 for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
