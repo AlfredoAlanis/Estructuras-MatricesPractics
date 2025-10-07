@@ -35,5 +35,25 @@ for (int i = 0; i < 4; i++)
 }
 
 //mostrar y calcular diagonal principal i=j
+printf("\nDiagonal Principal: ");
+for (int i = 0; i < 4; i++)
+{
+    printf("%d ", matriz[i][i]);
+    //acumular la suma de elementos
+    suma_principal += matriz[i][i];
+}
 
+//mostrar y calcular diagonal secundaria i + j = n-1
+printf("\nDiagonal Principal: ");
+for (int i = 0; i < 4; i++)
+{
+    printf("%d ", matriz[i][4-1-i]);
+    //acumular la suma de elementos
+    suma_secundaria += matriz[i][4-1-i];
+}
+// Mostrar los resultados de las sumas
+    printf("\n\nSuma diagonal principal: %d", suma_principal);
+    printf("\nSuma diagonal secundaria: %d", suma_secundaria);
+
+    return 0;
 }
