@@ -58,7 +58,7 @@ for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < 4; j++)
     {
-        printf("%2d ", A[i][j]);
+        printf("%2d ", B[i][j]);
     }
     printf("\n");
 }
@@ -68,7 +68,7 @@ for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < 4; j++)
     {
-        printf("%2d ", A[i][j]);
+        printf("%2d ", C[i][j]);
     }
     printf("\n");
 }
