@@ -41,5 +41,36 @@ for(int i = 0; i < 4; i++){
     }
 }
 
+//Imprimir matriz A 
+printf("Matriz A:\n");
+for(int i = 0; i < 4; i++){
+    //esta otra parte para las columnas
+    for (int j = 0; j < 4; j++)
+    {
+        printf("%2d ", A[i][j]);
+    }
+    printf("\n");
+}
+
+//Imprimir matriz B 
+printf("Matriz B:\n");
+for(int i = 0; i < 4; i++){
+    //esta otra parte para las columnas
+    for (int j = 0; j < 4; j++)
+    {
+        printf("%2d ", A[i][j]);
+    }
+    printf("\n");
+}
+//Imprimir matriz C(Suma de A y B) 
+printf("Matriz C (A + B):\n");
+for(int i = 0; i < 4; i++){
+    //esta otra parte para las columnas
+    for (int j = 0; j < 4; j++)
+    {
+        printf("%2d ", A[i][j]);
+    }
+    printf("\n");
+}
 return 0;
 }
