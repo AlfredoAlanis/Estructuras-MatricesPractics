@@ -17,7 +17,7 @@ for(int i = 0; i < 4; i++){
     //esta otra parte para las columnas
     for (int j = 0; j < 4; j++)
     {
-        matriz[i][j] = rand() % 10;  // Número aleatorio entre 0 y 9
+        matriz[i][j] = rand() % 90 + 10;  // Número aleatorio entre 10 y 90
         Suma = Suma + matriz[i][j]; //sumar cada elemento
     }
 } 
