@@ -8,7 +8,7 @@ int main(){
     srand(time(NULL));
 //variable para decidir el numero de datos que tendra la matriz en este caso 4x4, ademas de que sean ceros
 int matriz[4][4];
-//variables para contar pares e impares
+//variables para suma y promedio
 int Suma = 0;
 float Promedio;
 
@@ -38,7 +38,7 @@ for(int i = 0; i < 4; i++){
     printf("\n");
 }
 
-//aqui manda a imprimir el numero de pares e impares
+//aqui manda a imprimir la suma y promedio
 printf("\nSuma de todos los elementos: %d\n", Suma);
 printf("\nPromedio de los elementos: %.2f\n", Promedio);
 
