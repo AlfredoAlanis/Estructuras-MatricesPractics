@@ -48,6 +48,13 @@ for (int i = 0; i < 4; i++)
     }
     
 }
-
+//mostrar resultados de busqueda
+if (contador > 0)
+{
+    printf("\nEl numero %d aparece %d veces en la matriz.\n", numeroBuscar, contador);
+}else{
+    printf("\nEl numero %d NO se encuentra en la matriz.\n", numeroBuscar);
+}
+return 0;
 
 }
